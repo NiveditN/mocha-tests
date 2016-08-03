@@ -10,7 +10,7 @@ describe('String#split', function() {
 			['a,b,c'].split(','.length, 'arrays have equal length'));
 		for(var i=0; i<['a','b','c'].length; i++) {
 			assert.equal(['a','b','c'][i],
-				'a,b,c'.split(',')[i], i + 'element is equal');
+				['a,b,c'].split(',')[i], i + 'element is equal');
 		};
 	});
 
